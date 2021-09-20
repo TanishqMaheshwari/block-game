@@ -1,0 +1,38 @@
+.wrapper {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 50%;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+}
+
+.title {
+  font-family: 'HCo Gotham', 'Helvetica', 'Verdana', 'Arial', 'sans-serif';
+  color: #bf4320;
+  margin-top: 33%;
+  font-size: 40px;
+}
+
+.new {
+  margin-top: 25%;
+  background: #bf4320;
+  border: none;
+  outline: none;
+  padding: 10px 70px;
+  font-family: 'HCo Gotham', 'Helvetica', 'Verdana', 'Arial', 'sans-serif';
+  font-size: 20px;
+  color: white;
+  box-shadow: 0 0 10px 1px orange;
+  border-radius: 20px;
+}
+
+.new:hover {
+  box-shadow: 0 0 20px 10px orange;
+  cursor: pointer;
+}

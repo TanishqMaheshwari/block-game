@@ -1,0 +1,96 @@
+.mappedin-block-game {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  background: white;
+}
+
+.mappedin-block-game .renderer {
+  box-shadow: 0 0 10px 1px orange;
+}
+
+.mappedin-block-game .next {
+  margin-bottom: 100px;
+  order: 1;
+}
+
+.mappedin-block-game .game-grid {
+  order: 0;
+  z-index: 0;
+}
+
+.mappedin-block-game aside {
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.mappedin-block-game .display-piece {
+  order: 2;
+}
+
+.mappedin-block-game .display-piece .grid {
+  box-shadow: 0 0 20px 5px orange;
+}
+
+.mappedin-block-game .buttons {
+  order: 3;
+}
+
+@media (min-width: 720px) {
+  .mappedin-block-game {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+}
+
+.mappedin-block-game .info-button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  min-height: 30px;
+  width: 100%;
+  color: white;
+  background: #bf4320;
+  font-family: 'HCo Gotham', 'Helvetica', 'Verdana', 'Arial', 'sans-serif';
+  font-size: 18px;
+  box-shadow: 0 0 10px 1px orange;
+}
+
+.mappedin-block-game .info-button > .info-button-value {
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+.mappedin-block-game .start-button {
+  box-sizing: border-box;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  min-height: 30px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: #bf4320;
+  font-family: 'HCo Gotham', 'Helvetica', 'Verdana', 'Arial', 'sans-serif';
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px orange;
+}
+
+.mappedin-block-game .start-button:disabled {
+  background: #351107;
+  cursor: not-allowed;
+}

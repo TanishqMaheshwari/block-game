@@ -1,0 +1,72 @@
+{
+  "name": "hackedin-block-game",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/react": "^17.0.11",
+    "prettier": "^2.3.1",
+    "react-app-rewired": "^2.1.8"
+  },
+  "peerDependencies": {
+    "react": ">= 17",
+    "react-dom": ">= 17"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --extensions \".ts,.tsx,.js,.jsx\" --copy-files",
+    "build-demo": "react-app-rewired build",
+    "lint": "prettier --write ./src",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "printWidth": 80,
+    "singleQuote": true,
+    "quoteProps": "consistent",
+    "trailingComma": "all"
+  }
+}
