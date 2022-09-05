@@ -5,3 +5,6 @@ This project was built for an internal hackathon at my first co-op Mappedin. We 
 
 ## Developing
 This project requires NodeJS v12+ and yarn. Clone this repo and run `yarn` to setup the dependencies. You can start a test server that displays just the game using `yarn start`. You can run the code linter using `yarn lint`. When a new version is ready to be published to NPM, you can use `yarn build` to create the `dist` folder for publication.
+
+## Playing the game
+Use the `A` and `S` keys to rotate the blocks, `D` to hold a piece for later, and the `up key` to drop a block in place! 
